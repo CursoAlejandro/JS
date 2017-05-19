@@ -3,6 +3,38 @@
 
 const SALUDO = 'Hello ';
 
+//Variables y tipos de datos
+
+//Number
+//String
+//Boolean
+var esBueno =true;
+
+//Undefined
+var queSoy;
+
+//Null (Object)
+var aDatos = {}
+
+// Object
+var oDatos = {
+    nombre:"Pepe",
+    apellido:"Perez",
+    edad:23,
+    pais:'Suiza',
+    algo :undefined,
+    esVaron: true,
+    direccion : {
+        calle:"",
+        numero:"",
+        poblacion:"",
+        cp:"",
+        pais:""
+    }
+}
+
+console.dir(oNombre)
+console.dir(oDatos)
 
 var oBtn1 = document.querySelector("#btn1");
 
@@ -12,7 +44,7 @@ var oNombre = document.querySelector('#nombre');
 var oRespuesta = document.querySelector('#respuesta');
 
 
-
+oDatos.oDireccion.calle = "C/ Pez";
 function saludar () {
 let sSaludo = SALUDO
 sSaludo += oNombre.value;
@@ -24,6 +56,6 @@ oBtn1.onclick = saludar;
 
 
 
-console.dir(oBtn1);
+
 console.dir(oNombre)
-console.dir(oRespuesta)
+console.dir(typeof oDatos)
